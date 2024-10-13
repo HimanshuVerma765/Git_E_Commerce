@@ -1,40 +1,23 @@
-import { Link } from 'react-router-dom';
-import Logo from '../../assets/images/logo.png'
-
+import { Link } from "react-router-dom";
+import logo from "../../assets/th (1).jpg";
 const Header = () => {
-    return (
-        <>
-            <div className="headerWrapper">
-                <div className="top-strip bg-blue">
-                    <div className="container">
-                        <p className="mb-0 mt-0 text-center">Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay</p>
-                    </div>
-                </div>
-
-                <div className="header">
-                    <div className="container">
-                        <div className="row"> 
-                            <div className="logoWrapper d-flex align-items-center col-sm-2"> 
-                            <Link to={'/'}> <img src={Logo}></img></Link>
-                            </div>
-
-                            <div className='col-sm-10 d-flex align-items-center part2'>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
+  return (
+    <>
+      <header className="d-flex align-items-centre">
+        <nav className="container-fluid w-100">
+          <div className="row d-flex align-items-centre">
+            <div className="col-xs-3">
+              {/*logo warapper*/}
+              <Link to={"/"} className="d-flex align-items-centre logo">
+                <img src={logo} />
+                <span className=" ml-2 mt-1"> ECOM</span>
+              </Link>
             </div>
-        </>
-    )
-
-}
+          </div>
+        </nav>
+      </header>
+    </>
+  );
+};
 
 export default Header;
