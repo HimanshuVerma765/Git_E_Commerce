@@ -30,3 +30,35 @@ font-weight: 500;
 .logoWrapper img{
   width: 100%;
 }
+
+.headerWrapper .header .part2 .countryDrop{
+  width: 150px;
+  height: 60px;
+  min-width: 150px;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  padding: 10px 10px;
+}
+.headerWrapper .header .part2 .countryDrop{
+  text-align: left;
+  justify-content:space-between !important;
+}
+.headerWrapper .header .part2 .countryDrop .label{
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  line-height: 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop .name{
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+  color: #233a95 !important;
+  font-weight : 700;
+  line-height : 16px;
+}
+
+.headerWrapper .header .part2 .countryDrop span.m1-auto svg{
+opacity: 0.7 ;
+}
