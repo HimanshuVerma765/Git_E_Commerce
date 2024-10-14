@@ -1,9 +1,8 @@
-const Dashboard = () =>{
+const Home = () =>{
    return (
     <>
-    <h1> Dashboard page</h1>
     </>
    )
 }
 
-export default Dashboard;
+export default Home;
