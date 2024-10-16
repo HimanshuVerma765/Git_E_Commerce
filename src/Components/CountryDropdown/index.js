@@ -1,16 +1,109 @@
+import React from 'react';
 import Button from '@mui/material/Button';
 import { FaAngleDown } from "react-icons/fa6";
+import Dialog from '@mui/material/Dialog';
+import { IoMdSearch } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
+import { useState } from 'react';
+import Slide from '@mui/material/Slide';
+
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
+
 
 const CountryDropdown = () => {
+
+    const [isOpenModal, setisOpenModal] = useState(false);
+
     return (
         <>
-            <Button className='countryDrop'>
+            <Button className='countryDrop' onClick={() => setisOpenModal(true)}  >
                 <div className='info d-flex flex-column'>
                     <span className='label'>Your Location</span>
                     <span className='name'>India</span>
                 </div>
-                <span className='m1-auto'><FaAngleDown/></span>
+                <span className='m1-auto'><FaAngleDown /></span>
             </Button>
+
+
+            <Dialog open={isOpenModal} onClose={() => setisOpenModal(false)} className='locationModal' TransitionComponent={Transition}>
+                <h4 className='mb-0'>Choose Your Delivery Location</h4>
+
+                <p>Enter your address and we will specify the offer for your area</p>
+
+                <Button className='close_' onClick={() => setisOpenModal(false)}><IoClose /></Button>
+
+                <div className='headerSearch w-100'>
+                    <input type='text' placeholder='Search your area . . . . .' />
+                    <Button> <IoMdSearch /></Button>
+                </div>
+
+                <ul className='countryList mt-3'>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>India</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Sri Lanka</Button></li>
+                    <li><Button onClick={() => setisOpenModal(false)}>Pakistan</Button></li>
+
+                </ul>
+            </Dialog>
         </>
     )
 }

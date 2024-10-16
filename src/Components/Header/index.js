@@ -24,7 +24,8 @@ const Header = () => {
                                 <Link to={'/'}> <img src={Logo} alt='Logo'></img></Link>
                             </div>
                             <div className='col-sm-10 d-flex align-items-center part2'>
-                                <CountryDropdown />
+
+                                <CountryDropdown/>
 
                                 <SearchBox/>
 
