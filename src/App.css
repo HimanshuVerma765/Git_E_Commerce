@@ -264,6 +264,9 @@ nav .navPart2 ul {
 nav .navPart2 ul li a{
   text-decoration: none;
 }
+nav .navPart2 ul li{
+  padding-bottom: 20px;
+}
 nav .navPart2 ul li a button {
   font-size: 14px;
   font-weight: 600;
@@ -277,8 +280,44 @@ nav .navPart2 ul li a button {
   border-radius: 25px;
 }
 
-nav .navPart2 ul li a:hover {
+nav .navPart2 ul li a button:hover {
   background: #f0faff;
   color: #2bbef9;
   font-weight: 700;
+}
+
+nav .navPart2 ul li { 
+  position: relative;
+}
+
+nav .navPart2 ul li .submenu{
+ 
+  transform: all 0..3s ease-in-out;
+  background-color: #fff;
+  position: absolute;
+  top: 150%;
+  left: 0px;
+ min-width: 200px;
+ /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
+ opacity: 0;
+ visibility: hidden;
+}
+
+nav .navPart2 ul li .submenu a{
+  display: block;
+  width: 100%;
+}
+
+nav .navPart2 ul li .submenu a button{
+  width: 100%;
+  justify-content: flex-start !important;
+  border-radius: 0px !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+nav .navPart2 ul li:hover .submenu{
+  opacity: 1;
+  visibility: inherit;
+  top: 100%;
 }

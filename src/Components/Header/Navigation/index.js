@@ -18,25 +18,34 @@ const Navigation = () => {
                     <div className='col-sm-10 navPart2 d-flex align-items-center'>
                         <ul className='list list-inline ml-auto'>
                             <li className='list-inline-item'>
-                                <Link to="/"><Button>Home</Button></Link>
+                                <Link to="/"><Button>Man</Button></Link>
+                                <div className='submenu shadow'>
+                                <Link to="/"><Button>Clothing</Button></Link>
+                                <Link to="/"><Button>Footware</Button></Link>
+                                <Link to="/"><Button>Watches</Button></Link>
+                                <Link to="/"><Button>Clothing</Button></Link>
+                                <Link to="/"><Button>Footware</Button></Link>
+                                <Link to="/"><Button>Watches</Button></Link>
+                                </div>
                             </li>
+                         
                             <li className='list-inline-item'>
-                                <Link to="/"><Button>Fashion</Button></Link>
-                            </li>
+                                <Link to="/"><Button>Woman</Button></Link>
+                            </li> 
                             <li className='list-inline-item'>
                                 <Link to="/"><Button>Electronics</Button></Link>
                             </li>
                             <li className='list-inline-item'>
-                                <Link to="/"><Button>Bakery</Button></Link>
-                            </li> 
+                                <Link to="/"><Button>Home</Button></Link>
+                            </li>
                             <li className='list-inline-item'>
                                 <Link to="/"><Button>Grocery</Button></Link>
                             </li>
                             <li className='list-inline-item'>
-                                <Link to="/"><Button>Mobile</Button></Link>
+                                <Link to="/"><Button>kids</Button></Link>
                             </li>
                             <li className='list-inline-item'>
-                                <Link to="/"><Button>Blog</Button></Link>
+                                <Link to="/"><Button>gifts</Button></Link>
                             </li>
                             <li className='list-inline-item'>
                                 <Link to="/"><Button>Contact</Button> </Link>
