@@ -17,6 +17,9 @@ const Navigation = () => {
 
                     <div className='col-sm-10 navPart2 d-flex align-items-center'>
                         <ul className='list list-inline ml-auto'>
+                        <li className='list-inline-item'>
+                                <Link to="/"><Button>Home</Button></Link>
+                            </li> 
                             <li className='list-inline-item'>
                                 <Link to="/"><Button>Man</Button></Link>
                                 <div className='submenu shadow'>
