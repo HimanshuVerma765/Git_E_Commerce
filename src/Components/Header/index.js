@@ -6,8 +6,11 @@ import { Button } from '@mui/material';
 import { TbShoppingBag } from "react-icons/tb";
 import SearchBox from './SearchBox';
 import Navigation from './Navigation';
+import { useContext } from 'react';
+import { Mycontext } from '../../App';
 
 const Header = () => {
+    const context = useContext(Mycontext);
     return (
         <>
             <div className="headerWrapper">
@@ -24,8 +27,10 @@ const Header = () => {
                                 <Link to={'/'}> <img src={Logo} alt='Logo'></img></Link>
                             </div>
                             <div className='col-sm-10 d-flex align-items-center part2'>
+                               {
+                                context.countryList.lentgh!==0 && <CountryDropdown/>
 
-                                <CountryDropdown/>
+                               }
 
                                 <SearchBox/>
 

@@ -39,6 +39,11 @@ body {
   background: transparent;
 }
 
+.headerWrapper{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
 .headerWrapper .top-strip {
   padding: 8px 0px;
 }
@@ -200,6 +205,10 @@ list-style: none;
   color: black;
   justify-content: flex-start;
   padding: 15px 20px;
+}
+
+.locationModal .countryList li button:hover,.locationModal .countryList li button.active {
+  background: #d8dadf !important;
 }
 
 .locationModal .close_{
