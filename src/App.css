@@ -284,7 +284,7 @@ nav .navPart2{
 }
 
 nav .allCatTab {
-  background: #2bbef9;
+  background: #1e1f1f;
   padding: 10px 15px;
   border-radius: 30px;
 }
@@ -368,4 +368,31 @@ nav .navPart2 ul li:hover .submenu{
   opacity: 1;
   visibility: inherit;
   top: 100%;
+}
+
+
+.HomeBannerSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.HomeBannerSection .slick-arrow{
+  position: absolute;
+  top: 45%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px !important;
+  height: 40px !important;
+  background: #000;
+  border-radius: 100%;
+}
+
+.HomeBannerSection .slick-arrow .slick-next{
+right: 25px !important;
+}
+
+.HomeBannerSection .slick-arrow .slick-prev{
+  left: 25px !important;
 }
