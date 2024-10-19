@@ -231,6 +231,49 @@ flex: 0 0 21%;
 max-width: 21%;
 }
 
+nav .navPart1 .catWrapper{
+  position: relative;
+}
+
+nav .navPart1 .catWrapper .sidebarNav, nav .navPart1 .catWrapper .sidebarNavopen{
+  position: absolute;
+  background-color: #fff;
+  top: 118%;
+  left: 0;
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 0px;
+  transition: all 0.2s;
+  visibility: 0;
+  height: 0;
+  opacity: 0;
+}
+
+nav .navPart1 .catWrapper .sidebarNavopen{
+  height: auto;
+  opacity: 1;
+  visibility: inherit;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li, nav .navPart1 .catWrapper .sidebarNavopen ul li{
+  width: 300px;
+  list-style: none;
+  padding: 0px 15px;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper .sidebarNavopen ul li button{
+  color: #000;
+  width: 100%;
+  justify-content: flex-start;
+  text-transform: capitalize !important;
+
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper .sidebarNavopen ul li :hover{
+  background: transparent !important;
+}
+
+
 nav .navPart2{
   max-width: 79%;
   flex: 0 0 79%;
@@ -292,7 +335,7 @@ nav .navPart2 ul li {
 
 nav .navPart2 ul li .submenu{
  
-  transform: all 0..3s ease-in-out;
+  transform: all 0.2s ease-in-out;
   background-color: #fff;
   position: absolute;
   top: 150%;
