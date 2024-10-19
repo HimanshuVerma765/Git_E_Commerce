@@ -4,6 +4,9 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 
 body {
   font-family: "Lato", sans-serif;
@@ -248,6 +251,7 @@ nav .navPart1 .catWrapper .sidebarNav, nav .navPart1 .catWrapper .sidebarNavopen
   visibility: 0;
   height: 0;
   opacity: 0;
+  z-index: 100;
 }
 
 nav .navPart1 .catWrapper .sidebarNavopen{
@@ -344,6 +348,7 @@ nav .navPart2 ul li .submenu{
  /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
  opacity: 0;
  visibility: hidden;
+ z-index: 100;
 }
 
 nav .navPart2 ul li .submenu a{
