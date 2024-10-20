@@ -5,13 +5,14 @@ import Home from "./Pages/Home";
 import Header from "./components/Header";
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
+import SignIn from "./Pages/signIn";
 
 const Mycontext = createContext();
 function App() {
 
   const [ countryList,setCountryList] = useState([]);
   const [ selectedCountry,setselectedCountry] = useState('');
-
+  const [ isHeaderFooterShow, setisHeaderFooterShow] = useState(true);
 
 
   useEffect(()=>{
@@ -22,22 +23,32 @@ function App() {
     const responsive = await axios.get(url)
     .then((res)=>{
       setCountryList(res.data.data)
-        console.log(res.data.data);
     })
   }
 
   const values ={
         countryList,
         selectedCountry,
-        setselectedCountry
+        setselectedCountry,
+        setisHeaderFooterShow,
+        isHeaderFooterShow,
   }
   return (
     <BrowserRouter>
     <Mycontext.Provider value={values}>
-    <Header/>
+      {
+        isHeaderFooterShow && <Header/>
+      }
     <Routes>
       <Route path="/" element={<Home/>} />
+      <Route exact={true} path="/signIn" element={<SignIn/> } />
     </Routes>
+      {/*
+        isHeaderFooterShow &&  <Footer/>
+        */
+      }
+   
+  
     </Mycontext.Provider>
     </BrowserRouter>
   );
