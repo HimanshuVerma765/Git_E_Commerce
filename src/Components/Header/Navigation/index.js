@@ -24,16 +24,32 @@ const Navigation = () => {
                 </span>
               </Button>
 
-              <div
-                className={`sidebarNav${
-                  isOpenSidebarVal == true ? 'open':''
-                }`}
-              >
+              <div className={`sidebarNav${isOpenSidebarVal === true ? 'open' : ''}`}>
                 <ul>
                   <li>
                     <Link to="/">
-                      <Button>Man</Button>
+                      <Button>Men</Button>
                     </Link>
+                    <div className="submenu">
+                      <Link to="/">
+                        <Button>Clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Footware</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Watches</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Clothing</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Footware</Button>
+                      </Link>
+                      <Link to="/">
+                        <Button>Watches</Button>
+                      </Link>
+                    </div>
                   </li>
                   <li>
                     <Link to="/">
