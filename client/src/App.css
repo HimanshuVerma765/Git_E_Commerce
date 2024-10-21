@@ -5,12 +5,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
-
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 
 body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .bg-blue {
@@ -28,6 +28,16 @@ body {
   }
 }
 
+.cursor{
+  cursor: pointer;
+}
+
+.text-light{
+  color: #898989 !important;
+}
+.text-sml{
+  font-size: 14px;
+}
 ::-webkit-scrollbar{
   height: 8px;
   width: 8px;
@@ -273,10 +283,24 @@ nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper 
 
 }
 
-nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper .sidebarNavopen ul li :hover{
+nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper .sidebarNavopen ul li:hover{
   background: transparent !important;
 }
 
+
+nav .navPart1 .catWrapper .sidebarNav ul li{
+  position: static;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 250px;
+  height: auto;
+  background: #fff;
+  z-index: 100;
+}
 
 nav .navPart2{
   max-width: 79%;
@@ -387,12 +411,156 @@ nav .navPart2 ul li:hover .submenu{
   height: 40px !important;
   background: #000;
   border-radius: 100%;
+  font-family: Font-Awesome;
 }
 
-.HomeBannerSection .slick-arrow .slick-next{
+.HomeBannerSection .slick-next{
 right: 25px !important;
 }
 
-.HomeBannerSection .slick-arrow .slick-prev{
+.HomeBannerSection .slick-prev{
   left: 25px !important;
+}
+
+.homeProducts{
+  padding: 25px 0px;
+  width: 100%;
+}
+
+.homeProducts .banner{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productRow .hd{
+ font-size: 20px;
+ font-weight: 600;
+}
+
+.viewAllBtn{
+  padding: 5px 25px !important;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius:30px !important ;
+  color: #000;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.viewAllBtn svg{
+  font-size: 15px;
+}
+
+.productItem{
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.productItem .badge{
+display: inline-block;
+padding: 7px 10px;
+position: absolute;
+top: 10px;
+left: 10px;
+z-index: 100;
+
+}
+
+.productItem .info h4{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.productItem .info{
+  padding: 15px;
+
+}
+
+.productItem .actions{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  right: -100%;
+  z-index: 100;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.productItem .imgWrapper{
+  overflow: hidden;
+}
+
+.productItem .imgWrapper img{
+  transition: all 0.3s ease-in-out;
+}
+
+.productItem .imgWrapper:hover img{
+transform: scale(1.1);
+}
+
+.productItem .imgWrapper:hover .actions {
+opacity: 1;
+right: 10px;
+}
+
+.productItem .actions button{
+display: flex;
+align-items: center;
+justify-content: center;
+min-width: 30px !important;
+height:35px ;
+width: 35px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50% !important;
+background:#fff;
+box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+transition: all 0.0s !important;
+}
+
+.productItem .actions button:hover{
+background: #233a95 !important;
+}
+
+.productItem .actions button:hover svg{
+color: #fff !important;
+}
+
+.productItem .actions button svg{
+  color: #000 !important;
+  opacity: 0.8;
+  pointer-events: none;
+  font-size: 15px;
+}
+
+.product_row .productItem{
+border-right: 1px solid transparent !important;
+}
+
+.product_row .swipet-slider:last-child .productItem{
+border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.swiper{
+  padding-right: 1px !important;
+}
+
+.productItem .info .oldPrice{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: line-through;
+}
+
+.productItem .info .netPrice{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.badge-primary{
+  background:#2bbef9 !important;
 }

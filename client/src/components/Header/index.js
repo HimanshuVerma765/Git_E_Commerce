@@ -48,21 +48,11 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-                </header>
-
-                
+                </header>  
                 <Navigation/>
-
-
-
-
-
             </div>
         </>
     )
 
 }
-
 export default Header;
-
-// 31:16
