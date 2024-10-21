@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from "./Pages/Home";
-import Header from "./Components/Header";
+import Header from "./components/Header";
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
 import SignIn from "./Pages/signIn";

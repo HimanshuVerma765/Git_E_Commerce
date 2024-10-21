@@ -1,4 +1,4 @@
-import HomeBanner from "../../Components/HomeBanner";
+import HomeBanner from "../../components/HomeBanner";
 import banner1 from "../../assets/images/banner1.png";
 import { Button } from '@mui/material';
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -6,7 +6,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
-import ProductItem from "../../Components/ProductItem";
+import ProductItem from "../../components/ProductItem";
 
 
 const Home = () => {
