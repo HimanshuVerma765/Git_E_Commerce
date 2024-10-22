@@ -1,13 +1,17 @@
 import HomeBanner from "../../components/HomeBanner";
 import banner1 from "../../assets/images/banner1.png";
+import banner2 from "../../assets/images/banner2.png";
 import { Button } from '@mui/material';
 import { FaArrowRightLong } from "react-icons/fa6";
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import ProductItem from "../../components/ProductItem";
-
+import HomeCat from "../../components/HomeCat";
+import banner3 from "../../assets/images/banner3.png";
+import banner4 from "../../assets/images/banner4.png";
 
 const Home = () => {
     var productSliderOptions = {
@@ -22,14 +26,24 @@ const Home = () => {
         <>
             <HomeBanner />
 
+            <HomeCat />
+
             <section className="homeProducts">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
-                            <div className="banner">
-                                <img src={banner1} className="cursor w-100" />
+                            <div className="sticky">
+                                <div className="banner">
+                                    <img src={banner1} className="cursor w-100" />
+                                </div>
+
+                                <div className="banner mt-3">
+                                    <img src={banner2} className="cursor w-100" />
+                                </div>
                             </div>
                         </div>
+
+
                         <div className="col-md-9 productRow">
                             <div className="d-flex align-items-center">
                                 <div className="info w-75">
@@ -44,34 +58,33 @@ const Home = () => {
                                 <Swiper
                                     slidesPerView={4}
                                     spaceBetween={0}
-                                    pagination={{
-                                        clickable: true,
-                                    }}
+                                    navigation={true}
+                                    slidesPerGroup={1}
                                     modules={[Navigation]}
                                     className="mySwiper"
                                 >
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <ProductItem/>
+                                        <ProductItem />
                                     </SwiperSlide>
 
                                 </Swiper>
@@ -90,44 +103,27 @@ const Home = () => {
                                 <Button className="viewAllBtn ml-auto">View All<FaArrowRightLong /></Button>
                             </div>
 
-                            <div className="product_row w-100 mt-5">
-                                <Swiper
-                                    slidesPerView={4}
-                                    spaceBetween={0}
-                                    pagination={{
-                                        clickable: true,
-                                    }}
-                                    modules={[Navigation]}
-                                    className="mySwiper"
-                                >
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
+                            <div className="product_row ProductRow2 w-100 mt-4 d-flex">
 
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-
-                                    <SwiperSlide>
-                                        <ProductItem/>
-                                    </SwiperSlide>
-
-                                </Swiper>
-
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
+                                <ProductItem />
                             </div>
 
+
+                            <div className=" d-flex mt-4 mb-5 bannerSec">
+                                <div className="banner ">
+                                    <img src={banner3} className="cursor w-100" />
+                                </div>
+                                <div className="banner ">
+                                    <img src={banner4} className="cursor w-100" />
+                                </div>
+                            </div>
 
                         </div>
                     </div>

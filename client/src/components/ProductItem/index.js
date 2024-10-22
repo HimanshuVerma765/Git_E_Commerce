@@ -13,7 +13,6 @@ const ProductItem = () => {
                     <Button><FaRegHeart style={{fontSize:'20px'}}/></Button>
                 </div>
 
-
             </div>
 
             <div className="info">

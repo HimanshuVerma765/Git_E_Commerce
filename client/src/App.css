@@ -11,6 +11,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
 }
 
 .bg-blue {
@@ -28,31 +29,33 @@ body {
   }
 }
 
-.cursor{
+.cursor {
   cursor: pointer;
 }
 
-.text-light{
+.text-light {
   color: #898989 !important;
 }
-.text-sml{
+
+.text-sml {
   font-size: 14px;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   height: 8px;
   width: 8px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #ccc;
   height: 80px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
-.headerWrapper{
+.headerWrapper {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
 }
@@ -195,24 +198,24 @@ header .part3 .circle svg {
   display: flex;
 }
 
-.locationModal .MuiPaper-elevation{
+.locationModal .MuiPaper-elevation {
   padding: 25px;
   position: relative;
 }
 
-.locationModal .countryList{
-margin-bottom: 0px;
-max-height: 400px ;
-overflow-y: scroll;
-overflow-x: hidden;
+.locationModal .countryList {
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.locationModal .countryList li{
-width: 100%;
-list-style: none;
+.locationModal .countryList li {
+  width: 100%;
+  list-style: none;
 }
 
-.locationModal .countryList li button{
+.locationModal .countryList li button {
   width: 100%;
   text-transform: capitalize;
   color: black;
@@ -220,35 +223,37 @@ list-style: none;
   padding: 15px 20px;
 }
 
-.locationModal .countryList li button:hover,.locationModal .countryList li button.active {
+.locationModal .countryList li button:hover,
+.locationModal .countryList li button.active {
   background: #d8dadf !important;
 }
 
-.locationModal .close_{
-position: absolute;
-top: 10px;
-right: 10px;
-color: #000;
-min-width: 40px;
-width: 40px;
-height: 40px;
-border-radius: 50%;
+.locationModal .close_ {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.locationModal .close_ svg{
-font-size: 24px;
+.locationModal .close_ svg {
+  font-size: 24px;
 }
 
-nav .navPart1{
-flex: 0 0 21%;
-max-width: 21%;
+nav .navPart1 {
+  flex: 0 0 21%;
+  max-width: 21%;
 }
 
-nav .navPart1 .catWrapper{
+nav .navPart1 .catWrapper {
   position: relative;
 }
 
-nav .navPart1 .catWrapper .sidebarNav, nav .navPart1 .catWrapper .sidebarNavopen{
+nav .navPart1 .catWrapper .sidebarNav,
+nav .navPart1 .catWrapper .sidebarNavopen {
   position: absolute;
   background-color: #fff;
   top: 118%;
@@ -264,18 +269,21 @@ nav .navPart1 .catWrapper .sidebarNav, nav .navPart1 .catWrapper .sidebarNavopen
   z-index: 100;
 }
 
-nav .navPart1 .catWrapper .sidebarNavopen{
+nav .navPart1 .catWrapper .sidebarNavopen {
   height: auto;
   opacity: 1;
   visibility: inherit;
 }
-nav .navPart1 .catWrapper .sidebarNav ul li, nav .navPart1 .catWrapper .sidebarNavopen ul li{
+
+nav .navPart1 .catWrapper .sidebarNav ul li,
+nav .navPart1 .catWrapper .sidebarNavopen ul li {
   width: 300px;
   list-style: none;
   padding: 0px 15px;
 }
 
-nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper .sidebarNavopen ul li button{
+nav .navPart1 .catWrapper .sidebarNav ul li button,
+nav .navPart1 .catWrapper .sidebarNavopen ul li button {
   color: #000;
   width: 100%;
   justify-content: flex-start;
@@ -283,16 +291,17 @@ nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper 
 
 }
 
-nav .navPart1 .catWrapper .sidebarNav ul li button ,  nav .navPart1 .catWrapper .sidebarNavopen ul li:hover{
+nav .navPart1 .catWrapper .sidebarNav ul li button,
+nav .navPart1 .catWrapper .sidebarNavopen ul li:hover {
   background: transparent !important;
 }
 
 
-nav .navPart1 .catWrapper .sidebarNav ul li{
+nav .navPart1 .catWrapper .sidebarNav ul li {
   position: static;
 }
 
-nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu {
   position: absolute;
   top: 0px;
   left: 100%;
@@ -302,7 +311,7 @@ nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
   z-index: 100;
 }
 
-nav .navPart2{
+nav .navPart2 {
   max-width: 79%;
   flex: 0 0 79%;
 }
@@ -332,12 +341,15 @@ nav .allCatTab .icon2 svg {
 nav .navPart2 ul {
   margin-bottom: 0px;
 }
-nav .navPart2 ul li a{
+
+nav .navPart2 ul li a {
   text-decoration: none;
 }
-nav .navPart2 ul li{
+
+nav .navPart2 ul li {
   padding-bottom: 20px;
 }
+
 nav .navPart2 ul li a button {
   font-size: 14px;
   font-weight: 600;
@@ -357,30 +369,30 @@ nav .navPart2 ul li a button:hover {
   font-weight: 700;
 }
 
-nav .navPart2 ul li { 
+nav .navPart2 ul li {
   position: relative;
 }
 
-nav .navPart2 ul li .submenu{
- 
+nav .navPart2 ul li .submenu {
+
   transform: all 0.2s ease-in-out;
   background-color: #fff;
   position: absolute;
   top: 150%;
   left: 0px;
- min-width: 200px;
- /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
- opacity: 0;
- visibility: hidden;
- z-index: 100;
+  min-width: 200px;
+  /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
 }
 
-nav .navPart2 ul li .submenu a{
+nav .navPart2 ul li .submenu a {
   display: block;
   width: 100%;
 }
 
-nav .navPart2 ul li .submenu a button{
+nav .navPart2 ul li .submenu a button {
   width: 100%;
   justify-content: flex-start !important;
   border-radius: 0px !important;
@@ -388,7 +400,7 @@ nav .navPart2 ul li .submenu a button{
   font-weight: 600;
 }
 
-nav .navPart2 ul li:hover .submenu{
+nav .navPart2 ul li:hover .submenu {
   opacity: 1;
   visibility: inherit;
   top: 100%;
@@ -400,7 +412,7 @@ nav .navPart2 ul li:hover .submenu{
   overflow: hidden;
 }
 
-.HomeBannerSection .slick-arrow{
+.HomeBannerSection .slick-arrow {
   position: absolute;
   top: 45%;
   z-index: 100;
@@ -414,45 +426,46 @@ nav .navPart2 ul li:hover .submenu{
   font-family: Font-Awesome;
 }
 
-.HomeBannerSection .slick-next{
-right: 25px !important;
+.HomeBannerSection .slick-next {
+  right: 25px !important;
 }
 
-.HomeBannerSection .slick-prev{
+.HomeBannerSection .slick-prev {
   left: 25px !important;
 }
 
-.homeProducts{
+.homeProducts {
   padding: 25px 0px;
   width: 100%;
 }
 
-.homeProducts .banner{
+.homeProducts .banner {
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.productRow .hd{
- font-size: 20px;
- font-weight: 600;
+.hd {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.viewAllBtn{
+.viewAllBtn {
   padding: 5px 25px !important;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
-  border-radius:30px !important ;
+  border-radius: 30px !important;
   color: #000;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.viewAllBtn svg{
+.viewAllBtn svg {
   font-size: 15px;
 }
 
-.productItem{
+.productItem {
   width: 100%;
   height: auto;
   position: relative;
@@ -460,27 +473,27 @@ right: 25px !important;
   cursor: pointer;
 }
 
-.productItem .badge{
-display: inline-block;
-padding: 7px 10px;
-position: absolute;
-top: 10px;
-left: 10px;
-z-index: 100;
+.productItem .badge {
+  display: inline-block;
+  padding: 7px 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
 
 }
 
-.productItem .info h4{
+.productItem .info h4 {
   font-size: 15px;
   font-weight: 600;
 }
 
-.productItem .info{
+.productItem .info {
   padding: 15px;
 
 }
 
-.productItem .actions{
+.productItem .actions {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -491,76 +504,137 @@ z-index: 100;
   transition: all 0.5s ease-in-out;
 }
 
-.productItem .imgWrapper{
+.productItem .imgWrapper {
   overflow: hidden;
 }
 
-.productItem .imgWrapper img{
+.productItem .imgWrapper img {
   transition: all 0.3s ease-in-out;
 }
 
-.productItem .imgWrapper:hover img{
-transform: scale(1.1);
+.productItem .imgWrapper:hover img {
+  transform: scale(1.1);
 }
 
 .productItem .imgWrapper:hover .actions {
-opacity: 1;
-right: 10px;
+  opacity: 1;
+  right: 10px;
 }
 
-.productItem .actions button{
-display: flex;
-align-items: center;
-justify-content: center;
-min-width: 30px !important;
-height:35px ;
-width: 35px;
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: 50% !important;
-background:#fff;
-box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
-transition: all 0.0s !important;
+.productItem .actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px !important;
+  height: 35px;
+  width: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50% !important;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+  transition: all 0.0s !important;
 }
 
-.productItem .actions button:hover{
-background: #233a95 !important;
+.productItem .actions button:hover {
+  background: #233a95 !important;
 }
 
-.productItem .actions button:hover svg{
-color: #fff !important;
+.productItem .actions button:hover svg {
+  color: #fff !important;
 }
 
-.productItem .actions button svg{
+.productItem .actions button svg {
   color: #000 !important;
   opacity: 0.8;
   pointer-events: none;
   font-size: 15px;
 }
 
-.product_row .productItem{
-border-right: 1px solid transparent !important;
+.product_row .productItem {
+  border-right: 1px solid transparent !important;
 }
 
-.product_row .swipet-slider:last-child .productItem{
-border: 1px solid rgba(0, 0, 0, 0.1) !important;
+.product_row .swipet-slider:last-child .productItem {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
-.swiper{
+.swiper {
   padding-right: 1px !important;
 }
 
-.productItem .info .oldPrice{
+.productItem .info .oldPrice {
   font-size: 16px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: line-through;
 }
 
-.productItem .info .netPrice{
+.productItem .info .netPrice {
   font-size: 16px;
   font-weight: bold;
 }
 
-.badge-primary{
-  background:#2bbef9 !important;
+.badge-primary {
+  background: #2bbef9 !important;
+}
+
+.homcat {
+  padding: 35px 0px;
+}
+
+.homcat .swiper .item {
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.homcat .swiper .item img {
+  width: 80%;
+}
+
+.homcat .swiper{
+  overflow: inherit !important;
+}
+
+.homcat .swiper-button-prev, .homcat .swiper-button-next{
+top:-30px !important;
+width: 30px !important;
+height: 30px !important;
+}
+
+.homcat .swiper-button-prev{
+  right: 68px !important;
+  left: inherit !important;
+}
+
+.homcat .swiper-button-prev::after, .homcat .swiper-button-next::after{
+font-size: 12px;
+}
+
+.ProductRow2{
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ProductRow2 .productItem{
+width: 24%;
+overflow: hidden;
+border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.bannerSec{
+  gap: 15px;
+}
+
+.sticky{
+  position: sticky;
+  top: 10px;
+  z-index: 100;
 }
