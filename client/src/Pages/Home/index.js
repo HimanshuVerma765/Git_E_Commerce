@@ -12,6 +12,8 @@ import ProductItem from "../../components/ProductItem";
 import HomeCat from "../../components/HomeCat";
 import banner3 from "../../assets/images/banner3.png";
 import banner4 from "../../assets/images/banner4.png";
+import newsLetterImg from "../../assets/images/coupon.png";
+import { MdMailOutline } from "react-icons/md";
 
 const Home = () => {
     var productSliderOptions = {
@@ -125,6 +127,31 @@ const Home = () => {
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section className="newsLetterSection mt-3 mb-3 d-flex align-items-center">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <p className="text-white mb-1">$20 discount for your first order</p>
+                            <h3 className="text-white">Join our newsletter and get...</h3>
+                            <p className="text-light">Join our email subscription now to ge updates<br />on promotions and coupons.</p>
+
+
+
+                            <form>
+                                <MdMailOutline />
+                                <input type="text" placeholder="Your Email Address"/>
+                                <Button className="text-light">Subscribe</Button>
+                            </form>
+
+                        </div>
+                        <div className="col-md-6">
+                            <img src={newsLetterImg} />
                         </div>
                     </div>
                 </div>
