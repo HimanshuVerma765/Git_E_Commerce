@@ -145,7 +145,7 @@ const Home = () => {
 
                             <form>
                                 <MdMailOutline />
-                                <input type="text" placeholder="Your Email Address"/>
+                                <input type="text" placeholder="Your Email Address" />
                                 <Button className="text-light">Subscribe</Button>
                             </form>
 
@@ -156,8 +156,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-        </>
-    )
+
+            </>
+            )
 }
 
 export default Home;
