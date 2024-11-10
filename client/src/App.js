@@ -7,13 +7,14 @@ import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
 import SignIn from "./Pages/signIn";
 import Footer from "./components/Footer";
+import ProductModal from "./components/ProductModal";
 
 const Mycontext = createContext();
 function App() {
 
   const [countryList, setCountryList] = useState([]);
   const [selectedCountry, setselectedCountry] = useState('');
-  const [isHeaderFooterShow, setisHeaderFooterShow] = useState(true);
+  const [isOpenProductModal, setisOpenProductModal] = useState(false);
 
 
   useEffect(() => {
@@ -31,8 +32,8 @@ function App() {
     countryList,
     selectedCountry,
     setselectedCountry,
-    setisHeaderFooterShow,
-    isHeaderFooterShow,
+    isOpenProductModal,
+    setisOpenProductModal
   }
   return (
     <BrowserRouter>
@@ -41,7 +42,10 @@ function App() {
         <Routes>
           <Route exact={true} path="/" element={<Home />} />
         </Routes>
-        <Footer/>
+        <Footer />
+        {
+          isOpenProductModal === true && <ProductModal />
+        }
       </Mycontext.Provider>
     </BrowserRouter>
   );

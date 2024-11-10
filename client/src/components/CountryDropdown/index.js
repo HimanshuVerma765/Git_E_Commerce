@@ -60,7 +60,7 @@ const CountryDropdown = () => {
         </span>
       </Button>
 
-      <Dialog
+      <Dialog 
         open={isOpenModal}
         onClose={() => setisOpenModal(false)}
         className="locationModal"

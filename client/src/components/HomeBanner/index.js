@@ -12,7 +12,8 @@ const HomeBanner = () => {
     // autoplay:true
   };
   return (
-    <div className="HomeBannerSection">
+    <div className="container mt-3">
+      <div className="HomeBannerSection">
       <Slider {...settings}>
       
         <div className="item">
@@ -28,6 +29,7 @@ const HomeBanner = () => {
             <img src="https://www.beyoung.in/api/catalog/homepage-oct/Desktop/banner/new/cargo-jogger-desktop.jpg" className="w-100" />
         </div>
       </Slider>
+    </div>
     </div>
   );
 };
