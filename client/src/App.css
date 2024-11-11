@@ -19,7 +19,7 @@ Button{
 }
 
 .btn-blue {
-  background: #233895 !important;
+  background: #7a55c1 !important;
   color: #fff !important;
   text-transform: capitalize !important;
 }
@@ -29,8 +29,8 @@ Button{
   padding: 7px 10px;
 }
 
-.btn-blue{
-  background: #233a95 !important ;
+.bg-blue{
+  background: #7a55c1 !important ;
 }
 .btn-big{
   font-size: 15px!important;
@@ -122,6 +122,7 @@ font-size: 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 7px;
   padding: 10px 15px;
+  background : #f1f1f1 !important;
 }
 
 .headerWrapper .header .part2 .countryDrop {
@@ -139,7 +140,7 @@ font-size: 20px;
 .headerWrapper .header .part2 .countryDrop .name {
   font-size: 14px !important;
   text-transform: capitalize !important;
-  color: #233a95 !important;
+  color: #6d4aae !important;
   font-weight: 700;
   line-height: 16px;
 }
@@ -300,7 +301,7 @@ nav .navPart1 .catWrapper .sidebarNavopen {
   visibility: 0;
   height: 0;
   opacity: 0;
-  z-index: 100;
+  z-index: 101;
 }
 
 nav .navPart1 .catWrapper .sidebarNavopen {
@@ -351,9 +352,9 @@ nav .navPart2 {
 }
 
 nav .allCatTab {
-  background: #1e1f1f;
-  padding: 10px 15px;
-  border-radius: 30px;
+  background: #7a55c1 !important;
+  padding: 8px 15px !important;
+  border-radius: 30px !important;
 }
 
 nav .allCatTab * {
@@ -418,7 +419,7 @@ nav .navPart2 ul li .submenu {
   /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
   opacity: 0;
   visibility: hidden;
-  z-index: 100;
+  z-index: 101;
 }
 
 nav .navPart2 ul li .submenu a {
@@ -573,7 +574,7 @@ nav .navPart2 ul li:hover .submenu {
 }
 
 .productItem .actions button:hover {
-  background: #233a95 !important;
+  background: #7a55c1 !important;
 }
 
 .productItem .actions button:hover svg {
@@ -620,7 +621,7 @@ nav .navPart2 ul li:hover .submenu {
 }
 
 .badge-primary {
-  background: #2bbef9 !important;
+  background: #7a55c1 !important;
 }
 
 .homcat {
@@ -687,7 +688,7 @@ border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
 .newsLetterSection{
   width: 100%;
   height: auto;
-  background: #233a95;
+  background-image: linear-gradient(to bottom right, #4a2888, #6d4aae);
   position: relative;
   overflow: hidden;
   padding: 70px 0px;
@@ -750,7 +751,7 @@ position: static !important;
   position: absolute;
   top: 6px;
   right: 6px;
-  background: #233a95;
+  background: #7a55c1;
   font-size: 14px;
   padding: 12px 25px !important;
   color: #fff !important;
@@ -821,11 +822,11 @@ border: 1px solid rgba(0, 0, 0, 0.2);
 
 footer .copyright ul li a svg{
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #7a55c1;
 }
 
 footer .copyright ul li a:hover{
-  background: #2bbef9 !important;
+  background: #7a55c1 !important;
 }
 
 footer .copyright ul li a:hover svg{
