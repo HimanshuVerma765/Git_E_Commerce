@@ -8,6 +8,7 @@ import axios from 'axios'
 import SignIn from "./Pages/signIn";
 import Footer from "./components/Footer";
 import ProductModal from "./components/ProductModal";
+import Listing from "./Pages/Listing";
 
 const Mycontext = createContext();
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact={true} path="/" element={<Home />} />
+          <Route exact={true} path="cat/:id" element={<Listing />} />
         </Routes>
         <Footer />
         {
