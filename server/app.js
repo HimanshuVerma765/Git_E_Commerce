@@ -16,9 +16,6 @@ app.use(express.json());
 
 //Routes
 const categoryRoutes = require('./routes/category')
-
-
-
 app.use("/api/category", categoryRoutes);
 
 
