@@ -10,6 +10,8 @@ app.options('*',cors());
 
 //middleware
 app.use(bodyParser.json());
+app.use(express.json());
+
 //app.use(authJwt());
 
 //Routes
