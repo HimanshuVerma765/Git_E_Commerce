@@ -27,20 +27,23 @@ const Header = () => {
                                 <Link to={'/'}> <img src={Logo} alt='Logo'></img></Link>
                             </div>
                             <div className='col-sm-10 d-flex align-items-center part2'>
-                               {
-                                context.countryList.lentgh!==0 && <CountryDropdown/>
+                                {
+                                    context.countryList.lentgh !== 0 && <CountryDropdown />
 
-                               }
+                                }
 
-                                <SearchBox/>
+                                <SearchBox />
 
                                 <div className='part3 d-flex align-items-center ml-auto'>
-                                    <Button className='circle mr-3'><LuUser2 /></Button>
+                                    {
+                                        context.isLogin!==true ?<Link to="/signIn" > <Button className="btn-blue  btn-round mr-3">Sign In</Button> </Link> : <Button className='circle mr-3'><LuUser2 /></Button>
+                                    }
+
                                     <div className='cartTab ml-auto d-flex align-items-center'>
                                         <span className='price' >$3.29</span>
                                         <div className='position-relative ml-2'>
-                                        <Button className='circle'><TbShoppingBag /></Button>
-                                        <span className='count d-flex align-items-center justify-content-center'>1</span>
+                                            <Button className='circle'><TbShoppingBag /></Button>
+                                            <span className='count d-flex align-items-center justify-content-center'>1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -48,8 +51,8 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-                </header>  
-                <Navigation/>
+                </header>
+                <Navigation />
             </div>
         </>
     )

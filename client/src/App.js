@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
 import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
 import Footer from "./components/Footer";
 import ProductModal from "./components/ProductModal";
 import Listing from "./Pages/Listing";
@@ -17,6 +18,7 @@ function App() {
   const [selectedCountry, setselectedCountry] = useState('');
   const [isOpenProductModal, setisOpenProductModal] = useState(false);
   const [isHeaderFooterShow, setisHeaderFooterShow] = useState(true);
+  const [isLogin,setisLogin] = useState(false);
 
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries/")
@@ -37,7 +39,9 @@ function App() {
     isOpenProductModal,
     setisOpenProductModal,
     isHeaderFooterShow,
-    setisHeaderFooterShow
+    setisHeaderFooterShow,
+    isLogin,
+    setisLogin
   }
   return (
     <BrowserRouter>
@@ -50,7 +54,7 @@ function App() {
           <Route exact={true} path="/" element={<Home />} />
           <Route exact={true} path="cat/:id" element={<Listing />} />
           <Route exact={true} path="/signIn" element={<SignIn />} />
-          {/* <Route exact={true} path="/signUp" element={<Listing />} /> */}
+          <Route exact={true} path="/signUp" element={<SignUp />} />
         </Routes>
         {
           isHeaderFooterShow === true && <Footer />

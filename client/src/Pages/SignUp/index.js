@@ -6,14 +6,14 @@ import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
 import GoogleImg from "../../assets/images/google_image.png"
 
-const SignIn = () => {
+const SignUp = () => {
 
     const context = useContext(Mycontext);
     useEffect(() => {
         context.setisHeaderFooterShow(false)
     }, []);
     return (
-        <section className="section signInPage">
+        <section className="section signInPage signUpPage">
             <div className="container">
                 <div className="box card p-3 shadow border-0">
                     <div className="text-center">
@@ -22,8 +22,23 @@ const SignIn = () => {
 
 
 
-                    <form className="mt-3">
-                        <h2 className="mb-4">Sign In</h2>
+                    <form className="mt-2">
+                        <h2 className="mb-3">Sign Up</h2>
+
+                        <div className="row">
+                            <div className="col md-6">
+                                <div className="form-group">
+                                    <TextField label="Name" type="text" required variant="standard" className="w-100" />
+                                </div>
+                            </div>
+
+                            <div className="col md-6">
+                                <div className="form-group">
+                                    <TextField label="Phone No." type="text" required variant="standard" className="w-100" />
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="form-group">
                             <TextField id="standard-basic" label="Email" type="email" required variant="standard" className="w-100" />
                         </div>
@@ -34,11 +49,19 @@ const SignIn = () => {
                         <a className="border-effect cursor txt">Forgot Password?</a>
 
                         <div className="d-flex align-items-center mt-3 mb-3 ">
-                            <Button className="btn-blue col btn-lg btn-big " variant="outlined">Sign In</Button>
-                            <Link to="/"> <Button className=" btn-lg btn-big col ml-3" variant="outlined" onClick={()=>context.setisHeaderFooterShow(true)}>Cancel</Button> </Link>
+                            <div className="row w-100 ">
+                                <div className="col md-6">
+                                    <Button className="btn-blue w-100 col btn-lg btn-big " variant="outlined">Sign In</Button>
+                                </div>
+                                <div className="col md-6">
+                                    <Link to="/" className="d-block w-100"> <Button className=" btn-lg btn-big w-100 col " variant="outlined" onClick={() => context.setisHeaderFooterShow(true)}>Cancel</Button> </Link>
+                                </div>
+                            </div>
+
+
                         </div>
 
-                        <p className="mt-3 txt">Not Registered? <Link to="/signUp" className="border-effect">Sign Up</Link></p>
+                        <p className="mt-3 txt">Not Registered? <Link to="/signIn" className="border-effect">Sign In</Link></p>
 
                         <h6 className="mt-4 text-center font-weight-bold">Or continue with social account</h6>
 
@@ -52,4 +75,4 @@ const SignIn = () => {
     )
 };
 
-export default SignIn;
+export default SignUp;
