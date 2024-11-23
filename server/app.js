@@ -10,19 +10,22 @@ app.options('*',cors());
 
 //middleware
 app.use(bodyParser.json());
+app.use(express.json());
+
 //app.use(authJwt());
 
 //Routes
-const categoryRoutes = require('./routes/category')
-
+const categoryRoutes = require('./routes/category');
+const productRoutes = require('./routes/product');
 
 
 app.use("/api/category", categoryRoutes);
-
+app.use("/api/product",productRoutes);
 
 // database
 mongoose.connect(process.env.CONNECTION_STRING)
 .then(() => console.log('Connected to MongoDB'))
+
 .catch(err => console.log(err.message));
 
 
