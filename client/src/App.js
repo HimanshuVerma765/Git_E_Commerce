@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import Header from "./components/Header";
 import { createContext, useEffect, useState } from "react";
 import axios from 'axios'
-import SignIn from "./Pages/signIn";
+import SignIn from "./Pages/SignIn";
 import Footer from "./components/Footer";
 import ProductModal from "./components/ProductModal";
 import Listing from "./Pages/Listing";
@@ -16,7 +16,7 @@ function App() {
   const [countryList, setCountryList] = useState([]);
   const [selectedCountry, setselectedCountry] = useState('');
   const [isOpenProductModal, setisOpenProductModal] = useState(false);
-
+  const [isHeaderFooterShow, setisHeaderFooterShow] = useState(true);
 
   useEffect(() => {
     getCountry("https://countriesnow.space/api/v0.1/countries/")
@@ -31,20 +31,31 @@ function App() {
 
   const values = {
     countryList,
+    setCountryList,
     selectedCountry,
     setselectedCountry,
     isOpenProductModal,
-    setisOpenProductModal
+    setisOpenProductModal,
+    isHeaderFooterShow,
+    setisHeaderFooterShow
   }
   return (
     <BrowserRouter>
       <Mycontext.Provider value={values}>
-        <Header />
+        {
+          isHeaderFooterShow === true && <Header />
+        }
+
         <Routes>
           <Route exact={true} path="/" element={<Home />} />
           <Route exact={true} path="cat/:id" element={<Listing />} />
+          <Route exact={true} path="/signIn" element={<SignIn />} />
+          {/* <Route exact={true} path="/signUp" element={<Listing />} /> */}
         </Routes>
-        <Footer />
+        {
+          isHeaderFooterShow === true && <Footer />
+        }
+        
         {
           isOpenProductModal === true && <ProductModal />
         }
